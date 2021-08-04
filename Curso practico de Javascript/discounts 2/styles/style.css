@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*general styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.header,
+.main,
+.footer {
+  min-width: 320px;
+}
+
+/*se definen las variables */
+/* este sería un partial, importa el orden*/
+/* Header */
+.header {
+  display: flex;
+  background: #3fbbfb;
+  background: radial-gradient(circle, #3fbbfb 32%, #467afc 100%);
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  min-height: 100px;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  background: #2e2e2e;
+  align-items: center;
+  padding: 100px;
+  justify-content: space-around;
+  gap: 20px;
+  height: calc(100vh - 100px);
+}
+
+.card {
+  color: white;
+  width: 60%;
+  text-align: center;
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
+.card__title {
+  margin: 5px 0;
+}
+.card__item {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.card__section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+}
+.card__input {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 5px;
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  border-left: 1px solid;
+  border-bottom: 3px solid;
+  outline: none;
+  transition: all 0.7s;
+}
+.card__input:hover, .card__input:focus {
+  transform: scaleX(1.05);
+}
+.card__button {
+  border: 3px white solid;
+  background-color: blue;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.discountedPrice {
+  font-size: 2.5rem;
+  color: #000000;
+}
+.discountedPrice > h2 {
+  color: red;
+}
+
+@media (max-width: 660px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

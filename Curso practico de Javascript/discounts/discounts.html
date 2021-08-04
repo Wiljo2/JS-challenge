@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="img/discount.png" type="image/x-icon/.png">
+    <title>Discounts & Percentages</title>
+    
+	</head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Discounts and percentage</h1>
+      <p class="header__descriptoion"> Este es el segundo taller del curso práctivo de Javascript</p>
+    </header>
+
+    <main class="main">
+      <section class="card">
+        <h2 class="card__title">Calcula el precio a pagar de tus productos con descuentos</h2>
+        <form class="form">
+            <div class="card__section">
+              <label for="inputPrice">
+                Escribe el precio del cual quieres descuento:
+              </label>
+				      <input class="card__input" id="inputPrice" type="number" />
+          	</div>
+  
+            <div class="card__section">
+              <label for="inputDiscount">
+                  Escribe el descuento:
+              </label>
+              <input class="card__input" id="inputDiscount" type="number" />
+            </div>
+
+            <button class = "card__button " type="button" onclick="onClickPriceDiscount()">
+                Calcular descuento
+            </button>
+
+            <p class="discountedPrice" id="discountedPrice" ></p>
+
+        </form>
+      </section>
+      <script src="./discounts.js"></script>
+    </main>
+</body>
+</html>

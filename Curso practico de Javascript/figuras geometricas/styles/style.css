@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*general styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.header,
+.main,
+.footer {
+  min-width: 320px;
+}
+
+/*se definen las variables */
+/* este sería un partial, importa el orden*/
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, black 0%, #ff9a00 50%);
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  min-height: 100px;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  background: #2e2e2e;
+  align-items: center;
+  padding: 100px;
+  justify-content: space-around;
+  gap: 20px;
+  height: calc(100vh - 100px);
+}
+
+.card {
+  color: white;
+  width: 400px;
+  text-align: center;
+  background: #c3bc22;
+  background: linear-gradient(0deg, #c3bc22 0%, #fd412d 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
+.card__title {
+  margin: 5px 0;
+}
+.card__item {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.card__input {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.7s;
+}
+.card__input:hover {
+  transform: scaleX(1.05);
+}
+.card__input:focus {
+  color: #FFFFFF;
+  background-color: #2e2e2e;
+}
+.card__button {
+  border: #EB6629 3px solid;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25px;
+  color: #EB6629;
+  font-weight: bold;
+}
+
+@media (max-width: 660px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

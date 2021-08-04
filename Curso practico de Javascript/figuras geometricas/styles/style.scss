@@ -1,0 +1,80 @@
+@use "variables" as v; /*se definen las variables */
+
+@use "globals"; /* este sería un partial, importa el orden*/
+
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,154,0,1) 50%); 
+  color: v.$white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  min-height: 100px;
+}
+
+.main{
+  position: relative;
+  display: flex;
+  background: #2e2e2e;
+  align-items: center;
+  padding: 100px;
+  justify-content: space-around;
+  gap: 20px;
+  height: calc(100vh - 100px);
+
+}
+
+.card{
+  color: white;
+  width: 400px;
+  text-align: center;
+  background: rgb(195,188,34);
+  background: linear-gradient(0deg, rgba(195,188,34,1) 0%, rgba(253,65,45,1) 100%); 
+  padding: 20px;
+  border-radius: 20px;
+  &__title{
+    margin:5px 0;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  &__input{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.7s;
+    &:hover{
+      transform: scaleX(1.05);
+    }
+    &:focus{
+      color: v.$white;
+      background-color: #2e2e2e;
+    }
+  }
+  &__button{
+    border: #EB6629 3px solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    color: #EB6629;
+    font-weight: bold;
+  }
+
+}
+
+@media (max-width:660px){
+  .main{
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
