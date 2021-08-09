@@ -31,6 +31,6 @@
 - Third step: create functions
 - Fourth step: Integrate JS with HTMl
 
-
+[Click para ver los projectos](https://wiljo2.github.io/JS-challenge/Curso%20practico%20de%20Javascript/index.html)
 
 
