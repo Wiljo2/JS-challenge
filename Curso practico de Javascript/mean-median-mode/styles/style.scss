@@ -1,0 +1,95 @@
+@use "variables" as v; /*se definen las variables */
+
+@use "globals"; /* este sería un partial, importa el orden*/
+
+
+/* Header */
+
+.header {
+  display: flex;
+  background: rgb(63,187,251);
+  background: radial-gradient(circle, rgba(63,187,251,1) 32%, rgba(70,122,252,1) 100%);
+  color: v.$white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  min-height: 100px;
+}
+
+.main{
+  position: relative;
+  display: flex;
+  background: #2e2e2e;
+  align-items: center;
+  padding: 100px;
+  justify-content: space-around;
+  gap: 20px;
+  height: calc(100vh - 100px);
+
+}
+
+.card{
+  color: white;
+  width: 60%;
+  text-align: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  padding: 20px;
+  border-radius: 20px;
+  &__title{
+    margin:5px 0;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  &__section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+  }
+  &__input{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 5px;
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    border-left:1px solid;
+    border-bottom: 3px solid;
+    outline: none;
+    transition: all 0.7s;
+    &:hover,&:focus{
+      transform: scaleX(1.05);
+    }
+
+  }
+  &__button{
+    border: 3px white solid;
+    background-color: blue;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    color: v.$white;
+    font-weight: bold;
+  }
+}
+
+.discountedPrice{
+  font-size: 2.5rem;
+  color: v.$black;
+  & > h2 {
+    color: red;
+  }
+}
+
+@media (max-width:660px){
+  .main{
+    flex-direction: column;
+    height: auto;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Mean, median and mode</title>
+    
+	</head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Mean, median and mode</h1>
+      <p class="header__descriptoion">This is the third workshop of the Javascript practice course. </p>
+    </header>
+
+    <main class="main">
+      <section class="card">
+        <h2 class="card__title">Mediana</h2>
+        <form  onSubmit="return false;" class="form">
+            <div class="card__section">
+              <label for="inputPrice">
+                Escribe los numeros separados por una coma:
+              </label>
+				      <input class="card__input" id="InputNumber" type="text" />
+          	</div>
+
+            <button class = "card__button " type="button" onclick="onClickAverage()">
+                Calcular Promedio
+            </button>
+            <button class = "card__button " type="button" onclick="onClickMedian()">
+              Calcular mediana 
+            </button>
+            <button class = "card__button " type="button" onclick="onClickMode()">
+              Calcular Moda
+            </button>
+            <p class="result" id="Result" ></p>
+
+        </form>
+      </section>
+      <script src="./average-median-mode.js"></script>
+    </main>
+</body>
+</html>

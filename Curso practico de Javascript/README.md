@@ -1,15 +1,36 @@
-# Platzi Curso practico javascript
+## Platzi Practical javascript course
 
-## Taller #1: Figuras geométricas
+## Workshop #1: Geometric shapes
 
-- Primer paso: definir las formulas 
-- Segundo paso: implementar las formula en JavaScript 
-- Tercer paso: crear funciones
-- Cuarto paso: Integrar JS con HTMl
+- First step: define the formulas 
+- Second step: implement the formulas in JavaScript 
+- Third step: create functions
+- Fourth step: Integrate JS with HTMl
+- Folder : geometrics figures
 
-## Taller #2: Porcentajes y descuentos 
+## Workshop #2: Percentages and discounts 
 
-- Primer paso: definir las formulas 
-- Segundo paso: implementar las formula en JavaScript 
-- Tercer paso: crear funciones
-- Cuarto paso: Integrar JS con HTMl
+- First step: define the formulas 
+- Second step: implement the formulas in JavaScript 
+- Third step: create functions
+- Fourth step: Integrate JS with HTMl
+- Folder: discounts and (discounts 2 this version use arrays and objects)
+
+## Workshop #3: Percentages and discounts 
+
+- First step: define the formulas 
+- Second step: implement the formulas in JavaScript 
+- Third step: create functions
+- Fourth step: Integrate JS with HTMl
+- Folder: discounts and (discounts 2 this version use arrays and objects)
+
+## Workshop #4: Mean, median and mode
+
+- First step: define the formulas 
+- Second step: implement the formulas in JavaScript 
+- Third step: create functions
+- Fourth step: Integrate JS with HTMl
+
+
+
+
