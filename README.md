@@ -2,7 +2,7 @@
 In this project planned by platzi for the next 6 months which aims to accelerate my professional development from zero to JavaScript Fullstack. Therefore different courses will be held on the platform as: 
 - Fronted developer course  
 - Basic JavaScript course 
-- Practical javascript course 
+-  [Practical javascript course](https://wiljo2.github.io/JS-challenge/Curso%20practico%20de%20Javascript/) 
 - Closures and Scopes course  
 - ECMAScript 6+ course  
 - Js Engine (V8) and browser course  
