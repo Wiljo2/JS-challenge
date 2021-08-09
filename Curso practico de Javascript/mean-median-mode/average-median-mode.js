@@ -57,7 +57,7 @@ const calculateMode = (arr) => {
     return arr.sort((a,b) => arr.filter(v => v===a).length - arr.filter(v => v===b).length).pop();
 }
 
-const onClickAverage = () => {
+const onClickMode = () => {
     const input = document.getElementById("InputNumber").value;
     const arrayInput = inputToArray(input);
     const average = calculateMode(arrayInput);
