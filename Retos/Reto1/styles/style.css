@@ -1,0 +1,139 @@
+/* primary */
+/*general styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #55917F;
+}
+
+.header,
+.main,
+.footer {
+  min-width: 320px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  background-color: #5e4c5a;
+}
+
+.streaming {
+  background: -webkit-linear-gradient(90deg, #d21414 32%, black 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cinema {
+  background: -webkit-linear-gradient(45deg, #090979 24%, #038125 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  padding: 15px 0 0;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputs__movie, .inputs__price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.inputs__movie--input, .inputs__price--input {
+  outline: none;
+  border: 0;
+  padding: 5px 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.division {
+  height: 150px;
+  width: 2px;
+}
+
+.platform {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons__button {
+  margin-top: 10px;
+  border: none;
+  padding: 7px 65px;
+  background-color: #ef8354;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.results{
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 35vw;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-direction: column;
+}
+.footer__socialNetworks {
+  display: flex;   
+  gap: 20px;
+}
+
+.img__icon {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

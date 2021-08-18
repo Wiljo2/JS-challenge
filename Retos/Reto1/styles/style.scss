@@ -1,0 +1,106 @@
+@use "variables" as v; 
+
+@use "globals"; 
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  background-color: rgb(94, 76, 90);
+}
+.streaming{
+  background: -webkit-linear-gradient(90deg, rgba(210,20,20,1) 32%, rgba(0,0,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cinema{
+  background: -webkit-linear-gradient(45deg, rgba(9,9,121,1) 24%, rgba(3,129,37,1) 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  display:flex;
+  padding: 15px 0;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__movie , &__price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &--input{
+      outline: none;
+      border: 0;
+      padding: 5px 5px;
+      border-radius: 5px ;
+      text-align: center;
+      font-family: v.$fontPrimary;
+      font-weight: bold;
+    }
+  }
+}
+
+.division{
+  height:     150px;
+  width:      2px;     
+}
+
+.platform{
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  &__button{
+    margin-top: 10px ;
+    border: none;
+    padding: 7px 65px;
+    background-color: rgb( 239, 131, 84);
+    border-radius: 25px;
+    color: v.$fontColorPrimary;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  &__socialNetworks{
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.img__icon{
+  width: 40px;
+  height: 40px;
+}

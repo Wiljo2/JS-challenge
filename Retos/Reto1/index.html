@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Vs Cinema</title>
+    
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <h2 class="header__title"> Streaming Vs Tickets </h2>
+        <p class="header__description"> This is the first challenge of Platzi's JS-Challenge</p>
+    </header>
+    <main class="main">
+        <h1 class="title">What is best: <span class="streaming">Streaming</span> or <span class="cinema"> Cinema? </span></h1>
+        <form  onSubmit="return false;" class="form">
+            <div class="container">
+            <section class="inputs">
+                <div class="inputs__movie">
+                    <label class="inputs__movie--label" for="InputMovie">How many movies do you want to watch?</label>
+                    <input class="inputs__movie--input" type="number" id="InputMovie"> 
+                </div>
+                <hr>
+                <div class="inputs__price">
+                    <label class="input__price--label" for="InputPrice">How much is the average movie ticket? </label>
+                    <input class="inputs__price--input" name=2 type="number" id="InputPrice"> 
+                </div>
+            </section>
+            <hr class="division">
+            <fieldset class="platform">
+                <legend class="platform__title">Which streaming platforms you need <br>to watch them?</legend>
+                <label class="platform__label"> <input class="platform__input" type="checkbox" id="Disney" value=1>Disney Plus</label>
+                <label class="platform__label"> <input class="platform__input" type="checkbox" id="Netflix" value=2>Netflix</label>
+                <label class="platform__label"> <input class="platform__input" type="checkbox" id="Amazon" value=3>Amazon Prime</label>
+                <label class="platform__label"> <input class="platform__input" type="checkbox" id="HBO" value=4 >HBO Max</label>
+            </fieldset>   
+            </div>
+            <div class="results">
+                    <h2 id = "ResultCinema"></h2>
+                    <h2 id = "ResultStreaming"></h2>
+                <h2 id = "Result"></h2>
+            </div>
+            <div class="buttons"> 
+                <button class="buttons__button" onclick="compare()" type="button" name="action">COMPARAR</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>
+            This site is created for the Js Challenge by Wiljo
+        </p>
+        <div class="footer__socialNetworks">
+            <a href="https://github.com/Wiljo2"><img class="img__icon" src="img/github.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/williamibarraibanez/"><img class="img__icon" src="img/linkedin.png" alt="Github"></a>
+        </div>
+
+    </footer>
+<script src="scripts/index.js"></script>
+</body>
+</html>
