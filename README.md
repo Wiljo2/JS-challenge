@@ -14,3 +14,6 @@ And in the second stage:
 - Course on backend with js   
 
 My notion  https://river-singer-81c.notion.site/JS-Challenge-fa6cb3289fad4a8db8cb35387624d3a8
+
+Challenges: 
+- 1 Streaming Vs Cinema 
